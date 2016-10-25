@@ -8,12 +8,18 @@ jQuery(function($) {
 	// Window Load
 	$(window).load(function() {
 		// Preloader
-		$('.intro-tables, .parallax, header').css('opacity', '0');
+// 		$('.intro-tables, .parallax, header').css('opacity', '0');
+		$('.intro-tables').css('opacity', '0');
 		$('.preloader').addClass('animated fadeOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 			$('.preloader').hide();
-			$('.parallax, header').addClass('animated fadeIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+			$(".typed").show();
+				$(".typed").typewriter({
+					speed: 60
+				});
 				$('.intro-tables').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend');
-			});
+// 			$('.parallax, header').addClass('animated fadeIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+				
+// 			});
 		});
 
 		// Header Init
@@ -51,9 +57,7 @@ jQuery(function($) {
 		$('nav.navbar-fixed-top .navbar-brand img').attr('src', $('nav.navbar-fixed-top .navbar-brand img').data("active-url"));
 
 		// Typing Intro Init
-		$(".typed").typewriter({
-			speed: 60
-		});
+		
 
 		// Popup Form Init
 		var i = 0;
