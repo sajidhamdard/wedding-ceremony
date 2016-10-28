@@ -320,7 +320,7 @@ section {
 }
 
 .intro-table-first {
-	background-image: url('../img/table-1.jpg');
+	background-image: url('../img/table-2.jpg');
 }
 
 .intro-table-hover {
@@ -381,7 +381,7 @@ section {
 	position: relative;
 	width: 100%;
 	height: 300px;
-/* 	margin: 20px 0; */
+	margin: 20px 0;
 }
 
 .intro-tables .intro-table .heading {
